@@ -9,12 +9,12 @@ jdbc:h2:tcp://localhost:9092/mem:ATHENA
 
 2) Use the below parameters to connect to the in memory DB connected in the above scenario
 ```
-DB_DRIVER = "org.h2.Driver";
+DB_DRIVER = <b>"org.h2.Driver";</b>
 DB_URL = "jdbc:h2:tcp://localhost:9092/mem:ATHENA;DB_CLOSE_DELAY=-1";
 DB_USER = "";
 DB_PASSWORD = "";
 ```
-<b>DB_CLOSE_DELAY=-1</b> --> To persist the data till that JVM instance exists, Once the JVM instance is closed the data will be lost
+<b>DB_CLOSE_DELAY=-1 --></b> To persist the data till that JVM instance exists, Once the JVM instance is closed the data will be lost
 
 For more information visit     
 <http://www.h2database.com/html/main.html>
