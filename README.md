@@ -20,7 +20,6 @@ DB_PASSWORD = "";
 ***
 
 * <b>PingServer.java --> </b> run this class to test if the server is running 
-***
 
 For more information visit     
 <http://www.h2database.com/html/main.html>
