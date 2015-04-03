@@ -8,7 +8,8 @@ public class PingServer {
 
 	public static void main(String[] args) {
 
-		Connection conn = DBConnection.getDBConnection();
+		//Get a connection object returned by getH2DBConnection method
+		Connection conn = DBConnection.getH2DBConnection();
 		try {
 			//Check if connection is valid
 			if (conn.isValid(1000)) {

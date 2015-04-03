@@ -10,16 +10,16 @@ public class DBConnection {
     private static final String DB_USER = "";
     private static final String DB_PASSWORD = "";
     
-    public static Connection getDBConnection() {
-		Connection dbConnection = null;
+    public static Connection getH2DBConnection() {
+		Connection conn = null;
 		try {
 			Class.forName(DB_DRIVER);
-			dbConnection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
-			return dbConnection;
+			conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
+			return conn;
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return dbConnection;
+		return conn;
 	}
     
     
