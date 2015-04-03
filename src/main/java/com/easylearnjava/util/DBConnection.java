@@ -1,4 +1,4 @@
-package com.easylearnjava.h2db;
+package com.easylearnjava.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

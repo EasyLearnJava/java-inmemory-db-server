@@ -2,6 +2,8 @@ package com.easylearnjava.h2db;
 
 import java.sql.Connection;
 
+import com.easylearnjava.util.DBConnection;
+
 public class PingServer {
 
 	public static void main(String[] args) {
